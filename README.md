@@ -61,7 +61,7 @@ GET /competitions/BSA/scorers
 
 ## 🚀 Como rodar localmente
 
-    clone o repositório do GitHub 
+    clone o repositório do GitHub na sua máquina
     crie um ambiente virtual: python -m venv venv
     ative o ambiente virtual: venv\Scripts\activate
     instale as dependências: pip install -r requirements.txt
