@@ -2,6 +2,8 @@ import streamlit as st
 from services.data_loader import load_data
 from components.classificacao import render_classificacao
 from components.artilharia import render_artilharia
+from components.time import render_time
+
 
 if __name__ == "__main__":
 
@@ -43,18 +45,22 @@ if __name__ == "__main__":
 
         render_artilharia(dados["artilheiros"],dados["classificacao"])
 
-
     with tab_time:
 
-        st.subheader("Análise do Time")
+        lista_times = (
+            dados["classificacao"]["nome_time"]
+            .sort_values()
+            .unique()
+            .tolist()
+        )
 
         time = st.selectbox(
             "Selecione um time",
-            [
-                "Palmeiras",
-                "Flamengo",
-                "São Paulo"
-            ]
+            lista_times
         )
 
-        st.write(f"Análise do {time}")
+        render_time(
+            dados["partidas"],
+            dados["classificacao"],
+            time
+        )
