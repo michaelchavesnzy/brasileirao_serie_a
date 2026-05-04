@@ -39,7 +39,8 @@ para:
 
 Os dados são consumidos da API pública:
 
-👉 https://api.football-data.org/v4/
+👉 https://www.football-data.org/documentation/quickstart
+👉 https://api.football-data.org/v4/ (url base)
 
 ------------------------------------------------------------------------
 
