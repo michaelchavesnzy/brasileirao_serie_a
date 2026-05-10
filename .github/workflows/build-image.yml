@@ -1,0 +1,26 @@
+name: Build and Push Streamlit Image
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Login no GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build da imagem Docker
+        run: docker build -t ghcr.io/michaelchavesnzy/brasileirao_serie_a:latest .
+
+      - name: Push da imagem para o GHCR
+        run: docker push ghcr.io/michaelchavesnzy/brasileirao_serie_a:latest
