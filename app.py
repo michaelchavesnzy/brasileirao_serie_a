@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     st.set_page_config(layout="wide")
 
-    st.markdown("# Campeonato Brasileiro 2026")
+    st.markdown("# Campeonato Brasileiro 2026 (BSA)")
 
     tab_geral, tab_time = st.tabs([
 
