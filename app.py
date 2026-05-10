@@ -45,6 +45,8 @@ if __name__ == "__main__":
 
         render_artilharia(dados["artilheiros"],dados["classificacao"])
 
+        st.caption("Desenvolvimento por Michael Chaves")
+
     with tab_time:
 
         lista_times = (
