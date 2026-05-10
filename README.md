@@ -5,7 +5,7 @@ Campeonato Brasileiro Série A, com foco em análise de times,
 classificação, artilharia e próximos jogos.
 
 🔗 **Acesse o projeto online:**\
-👉 https://projeto-michael-brasileirao-serie-a.streamlit.app/
+👉 https://bsa.michaelhub.cloud/
 
 ------------------------------------------------------------------------
 

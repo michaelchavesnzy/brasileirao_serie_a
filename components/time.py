@@ -58,7 +58,7 @@ def render_comparativo_time_adversario(df_classificacao, df_partidas, nome_time)
     metricas_time = comparativo["metricas_time"]
     metricas_adversario = comparativo["metricas_adversario"]
 
-    st.markdown("## 📊 Time x Próximo Adversário")
+    st.markdown("## 📊 Time x próximo Adversário")
 
     st.caption(
         f"Próximo jogo: Rodada {int(proximo_jogo['rodada_partida'])} — "
